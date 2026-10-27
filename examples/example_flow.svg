@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#7fe3ff" stroke-width="2"/>
+    </marker>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#7fe3ff" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#0a1224"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="80" y="95" fill="#e8f6ff" font-size="52" font-weight="700" letter-spacing="2">ACME PIPELINE</text>
+  <text x="80" y="135" fill="#7fe3ff" font-size="24" letter-spacing="3">A SAMPLE 7-STEP PROCESS INFOGRAPHIC</text>
+  <line x1="80" y1="160" x2="1840" y2="160" stroke="#7fe3ff" stroke-opacity="0.4"/>
+
+  <!-- Flow nodes: 4 top row, 3 bottom row (snake) -->
+  <g fill="none" stroke="#7fe3ff" stroke-width="2.5">
+    <rect x="80"   y="210" width="380" height="190" rx="14"/>
+    <rect x="560"  y="210" width="380" height="190" rx="14"/>
+    <rect x="1040" y="210" width="380" height="190" rx="14"/>
+    <rect x="1520" y="210" width="320" height="190" rx="14"/>
+    <rect x="1520" y="470" width="320" height="190" rx="14"/>
+    <rect x="1040" y="470" width="380" height="190" rx="14"/>
+    <rect x="560"  y="470" width="380" height="190" rx="14"/>
+  </g>
+  <g stroke="#7fe3ff" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+    <line x1="460" y1="305" x2="556" y2="305"/>
+    <line x1="940" y1="305" x2="1036" y2="305"/>
+    <line x1="1420" y1="305" x2="1516" y2="305"/>
+    <line x1="1680" y1="400" x2="1680" y2="466"/>
+    <line x1="1520" y1="565" x2="1424" y2="565"/>
+    <line x1="1040" y1="565" x2="944" y2="565"/>
+  </g>
+
+  <!-- Step badges -->
+  <g fill="#0a1224" stroke="#7fe3ff" stroke-width="2">
+    <circle cx="80" cy="210" r="22"/><circle cx="560" cy="210" r="22"/><circle cx="1040" cy="210" r="22"/>
+    <circle cx="1520" cy="210" r="22"/><circle cx="1520" cy="470" r="22"/><circle cx="1040" cy="470" r="22"/><circle cx="560" cy="470" r="22"/>
+  </g>
+  <g fill="#7fe3ff" font-size="22" font-weight="700" text-anchor="middle">
+    <text x="80" y="218">1</text><text x="560" y="218">2</text><text x="1040" y="218">3</text>
+    <text x="1520" y="218">4</text><text x="1520" y="478">5</text><text x="1040" y="478">6</text><text x="560" y="478">7</text>
+  </g>
+
+  <!-- Node text -->
+  <g fill="#e8f6ff" font-size="26" font-weight="700">
+    <text x="110" y="262">INTAKE</text>
+    <text x="590" y="262">MODEL</text>
+    <text x="1070" y="262">PLANNING</text>
+    <text x="1550" y="262">OUTPUTS</text>
+    <text x="1550" y="522">ROUTING</text>
+    <text x="1070" y="522">WORKERS</text>
+    <text x="590" y="522">DELIVERY</text>
+  </g>
+  <g fill="#9fb8cc" font-size="20">
+    <text x="110" y="300">Raw requests and files</text>
+    <text x="110" y="328">Unstructured inputs</text>
+    <text x="110" y="356">enter the system</text>
+
+    <text x="590" y="300">Parser builds a</text>
+    <text x="590" y="328">structured model of every</text>
+    <text x="590" y="356">entity and relation</text>
+
+    <text x="1070" y="300">Planner splits the model</text>
+    <text x="1070" y="328">into small, independent</text>
+    <text x="1070" y="356">work units</text>
+
+    <text x="1550" y="300">Reports, files,</text>
+    <text x="1550" y="328">and exports</text>
+    <text x="1550" y="356">auto-generated</text>
+
+    <text x="1550" y="560">Solver assigns each</text>
+    <text x="1550" y="588">unit to a worker by</text>
+    <text x="1550" y="616">load &amp; distance</text>
+
+    <text x="1070" y="560">Existing partners</text>
+    <text x="1070" y="588">fill idle time (55% util.)</text>
+    <text x="1070" y="616">Acme owns no capacity</text>
+
+    <text x="590" y="560">Units shipped to client,</text>
+    <text x="590" y="588">assembled predictably,</text>
+    <text x="590" y="616">with no rework</text>
+  </g>
+
+  <!-- Icons (monocolor line) -->
+  <g fill="none" stroke="#7fe3ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- doc -->
+    <path d="M380 235 h35 l20 20 v50 h-55z M415 235 v20 h20"/>
+    <!-- graph -->
+    <circle cx="840" cy="250" r="9"/><circle cx="890" cy="280" r="9"/><circle cx="840" cy="320" r="9"/><circle cx="895" cy="230" r="7"/>
+    <path d="M848 255 L882 275 M884 288 L848 314 M846 244 L889 233"/>
+    <!-- cube -->
+    <path d="M1345 250 l30 -16 30 16 v34 l-30 16 -30 -16z M1345 250 l30 16 30 -16 M1375 266 v34"/>
+    <!-- gear / file -->
+    <path d="M1768 238 h30 l16 16 v44 h-46z M1778 270 h26 M1778 284 h26"/>
+    <!-- scales/network -->
+    <circle cx="1780" cy="580" r="10"/><circle cx="1745" cy="620" r="8"/><circle cx="1815" cy="620" r="8"/>
+    <path d="M1775 590 L1749 612 M1785 590 L1811 612"/>
+    <!-- factory -->
+    <path d="M1330 640 v-50 l30 20 v-20 l30 20 v-20 l30 20 v30z"/>
+    <!-- truck -->
+    <path d="M830 640 v-34 h50 v34 M880 616 h20 l14 14 v10 h-84 M845 645 a6 6 0 1 0 0.1 0 M895 645 a6 6 0 1 0 0.1 0"/>
+  </g>
+
+  <!-- Chart panel: capacity utilization -->
+  <rect x="80" y="470" width="400" height="190" rx="14" fill="none" stroke="#7fe3ff" stroke-width="2.5"/>
+  <text x="105" y="508" fill="#e8f6ff" font-size="22" font-weight="700">CAPACITY UTILIZATION</text>
+  <g stroke="#7fe3ff" stroke-width="2" fill="none">
+    <rect x="130" y="560" width="70" height="80" fill="#7fe3ff" fill-opacity="0.15"/>
+    <rect x="260" y="540" width="70" height="100" fill="#7fe3ff" fill-opacity="0.15"/>
+    <rect x="390" y="520" width="70" height="120" fill="#7fe3ff" fill-opacity="0.55"/>
+    <line x1="110" y1="640" x2="470" y2="640"/>
+  </g>
+  <g fill="#9fb8cc" font-size="16" text-anchor="middle">
+    <text x="165" y="656">~50%</text><text x="295" y="656">~65%</text><text x="425" y="656">Target ↑</text>
+  </g>
+
+  <!-- Comparison panel -->
+  <text x="80" y="730" fill="#e8f6ff" font-size="28" font-weight="700" letter-spacing="2">WHY ASSET-LIGHT BEATS ASSET-HEAVY</text>
+  <rect x="80" y="750" width="820" height="200" rx="14" fill="none" stroke="#7fe3ff" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="1000" y="750" width="840" height="200" rx="14" fill="none" stroke="#7fe3ff" stroke-width="2.5"/>
+  <text x="110" y="792" fill="#9fb8cc" font-size="24" font-weight="700">TRADITIONAL — ASSET-HEAVY</text>
+  <text x="1030" y="792" fill="#7fe3ff" font-size="24" font-weight="700">ACME — ASSET-LIGHT</text>
+  <g fill="#9fb8cc" font-size="21">
+    <text x="110" y="835">✕  $10M+ up-front capital</text>
+    <text x="110" y="870">✕  500 staff on payroll</text>
+    <text x="110" y="905">✕  Idle capacity bleeds $1M / month</text>
+    <text x="110" y="940">✕  24 months to open each site</text>
+  </g>
+  <g fill="#e8f6ff" font-size="21">
+    <text x="1030" y="835">✓  $0 owned capacity (zero CapEx)</text>
+    <text x="1030" y="870">✓  0 manual staff on payroll</text>
+    <text x="1030" y="905">✓  Platform burn &lt; $10k / month</text>
+    <text x="1030" y="940">✓  1–2 weeks to onboard a partner</text>
+  </g>
+  <line x1="900" y1="850" x2="996" y2="850" stroke="#7fe3ff" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- Footer strip -->
+  <rect x="80" y="975" width="1760" height="64" rx="12" fill="#7fe3ff" fill-opacity="0.1" stroke="#7fe3ff" stroke-opacity="0.5"/>
+  <text x="110" y="1015" fill="#e8f6ff" font-size="22">
+    <tspan font-weight="700" fill="#7fe3ff">RING-FENCING  </tspan>
+    Core IP and capital sit in a holding entity, insulated from operating liability. (All figures are fictional.)
+  </text>
+</svg>
