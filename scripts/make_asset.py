@@ -26,10 +26,14 @@ def chroma_key(img, bg, tol):
     for y in range(h):
         for x in range(w):
             r, g, b, a = px[x, y]
-            d = max(abs(r-bg[0]), abs(g-bg[1]), abs(b-bg[2]))
-            if d < tol: px[x, y] = (r, g, b, 0)
-            elif d < tol*2:  # soft edge
-                px[x, y] = (r, g, b, int(255*(d-tol)/tol))
+            # Euclidean-like distance normalized across color channels
+            d = max(abs(r - bg[0]), abs(g - bg[1]), abs(b - bg[2]))
+            if d < tol:
+                px[x, y] = (r, g, b, 0)
+            elif d < tol * 2:
+                px[x, y] = (r, g, b, int(255 * (d - tol) / tol))
+            else:
+                px[x, y] = (r, g, b, 255)
     return img
 
 def main():

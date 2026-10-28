@@ -1,0 +1,355 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif">
+  <!--
+    ======================================================================
+    GEMINI NOTEBOOK INFOGRAPHIC TEMPLATE (NotebookLM Aesthetic)
+    ======================================================================
+    A clean, modular, editorial notebook briefing designed for high-density
+    data synthesis, clear provenance, and crisp analytical reading.
+
+    ADJUSTABLE PALETTES:
+    - Default (Gemini Light):
+        Canvas: #F8F9FA | Cards: #FFFFFF | Border: #E2E8F0
+        Accent: #00A389 | Accent-Subtle: #E6F7F4
+        Title:  #0F172A | Body:  #334155 | Muted: #64748B
+    - Gemini Dark:
+        Canvas: #0B0F19 | Cards: #131B2A | Border: #222F45
+        Accent: #38BDF8 | Accent-Subtle: rgba(56, 189, 248, 0.12)
+        Title:  #F8FAFC | Body:  #CBD5E1 | Muted: #94A3B8
+    - Warm Editorial:
+        Canvas: #FAF7F2 | Cards: #FFFFFF | Border: #E7E5E4
+        Accent: #C2410C | Accent-Subtle: #FFEDD5
+        Title:  #292524 | Body:  #44403C | Muted: #78716C
+
+    IMAGE DENSITY MODES:
+    - Minimal  : 0-1 raster assets; rely purely on crisp monocolor SVG inline icons.
+    - Balanced : 2-3 transparent monocolor spot assets (Hero card + Key mechanisms).
+    - Rich     : Visual spot asset in each card (embedded via &lt;image&gt; with mono tint).
+
+    STRICT ICON RULE: All icons and illustrations MUST BE MONOCOLOR.
+  -->
+  <defs>
+    <!-- Arrow marker -->
+    <marker id="notebook-arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1,1 L9,5 L1,9" fill="none" stroke="#00A389" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+
+    <!-- Notebook Dot Grid Background -->
+    <pattern id="dot-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="16" cy="16" r="1.2" fill="#00A389" fill-opacity="0.12"/>
+    </pattern>
+
+    <!-- Monocolor SVG Icons (strictly monochrome) -->
+    <g id="icon-notebook">
+      <rect x="0" y="0" width="24" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="2.2"/>
+      <line x1="6" y1="8" x2="18" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <line x1="6" y1="14" x2="18" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <line x1="6" y1="20" x2="14" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="-3" cy="7" r="1.5" fill="currentColor"/>
+      <circle cx="-3" cy="14" r="1.5" fill="currentColor"/>
+      <circle cx="-3" cy="21" r="1.5" fill="currentColor"/>
+    </g>
+
+    <g id="icon-spark">
+      <path d="M12 2 L14.5 9.5 L22 12 L14.5 14.5 L12 22 L9.5 14.5 L2 12 L9.5 9.5 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+
+    <g id="icon-layers">
+      <path d="M12 2 L2 7 L12 12 L22 7 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M2 12 L12 17 L22 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 17 L12 22 L22 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g id="icon-analytics">
+      <path d="M3 21 H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <rect x="6" y="11" width="3" height="10" fill="currentColor"/>
+      <rect x="11" y="6" width="3" height="15" fill="currentColor"/>
+      <rect x="16" y="14" width="3" height="7" fill="currentColor"/>
+    </g>
+
+    <g id="icon-citation">
+      <path d="M4 6 H16 A4 4 0 0 1 20 10 V18 A2 2 0 0 1 18 20 H6 A2 2 0 0 1 4 18 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M8 10 H16 M8 14 H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1920" height="1080" fill="#F8F9FA"/>
+  <rect width="1920" height="1080" fill="url(#dot-grid)"/>
+
+  <!-- ===================================================================
+       1. NOTEBOOK HEADER & PROVENANCE STRIP
+       =================================================================== -->
+  <g transform="translate(80, 50)">
+    <!-- Notebook Chip / Source Badge -->
+    <rect x="0" y="0" width="215" height="32" rx="16" fill="#E6F7F4" stroke="#00A389" stroke-width="1"/>
+    <g transform="translate(14, 6)" color="#00A389">
+      <use href="#icon-spark" width="20" height="20"/>
+    </g>
+    <text x="42" y="21" fill="#00A389" font-size="13" font-weight="700" letter-spacing="1.5">NOTEBOOK SYNTHESIS</text>
+
+    <!-- Source Count Chip -->
+    <rect x="230" y="0" width="175" height="32" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="246" y="21" fill="#64748B" font-size="13" font-weight="600" letter-spacing="0.5">4 SOURCES ANALYZED</text>
+
+    <!-- Date / Version Stamp -->
+    <text x="1760" y="21" fill="#64748B" font-size="14" font-weight="500" text-anchor="end">VERSION 2.4 · OCT 2026</text>
+
+    <!-- Title & Subtitle -->
+    <text x="0" y="80" fill="#0F172A" font-size="44" font-weight="800" letter-spacing="-0.5">Autonomous Agent Runtimes &amp; Scalable Coordination</text>
+    <text x="0" y="116" fill="#334155" font-size="20" font-weight="400">
+      A systematic briefing on modular task graph execution, deterministic isolation, and memory-bound scaling.
+    </text>
+
+    <!-- Header Divider Line -->
+    <line x1="0" y1="140" x2="1760" y2="140" stroke="#E2E8F0" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===================================================================
+       2. TOP ROW: 3 MODULAR NOTEBOOK CARDS
+       =================================================================== -->
+
+  <!-- CARD 1: Executive Abstract & Core Finding (Width: 560, Height: 380) -->
+  <g transform="translate(80, 220)">
+    <rect width="560" height="380" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <!-- Top accent rule -->
+    <path d="M 0 18 Q 0 0 18 0 L 542 0 Q 560 0 560 18 L 560 6 L 0 6 Z" fill="#00A389"/>
+
+    <g transform="translate(32, 36)">
+      <!-- Card Category Tag -->
+      <text x="0" y="0" fill="#00A389" font-size="13" font-weight="700" letter-spacing="1.2">01 / EXECUTIVE BRIEF</text>
+      <text x="0" y="32" fill="#0F172A" font-size="24" font-weight="700">Decoupled State Isolation</text>
+
+      <!-- Spot Image / Icon Zone (Adjustable: spot illustration or inline icon) -->
+      <!-- In minimal mode: uses inline icon; in rich mode: embed image asset -->
+      <g transform="translate(430, -5)" color="#00A389">
+        <use href="#icon-notebook" transform="scale(1.8)"/>
+      </g>
+
+      <!-- Key Callout Box -->
+      <rect x="0" y="52" width="496" height="72" rx="10" fill="#E6F7F4" stroke="#00A389" stroke-opacity="0.3" stroke-width="1"/>
+      <text x="18" y="78" fill="#00A389" font-size="13" font-weight="700" letter-spacing="0.5">CORE TAKEAWAY</text>
+      <text x="18" y="102" fill="#0F172A" font-size="15" font-weight="600">State sync overhead drops 78% via zero-copy buffers.</text>
+
+      <!-- Structured Insights -->
+      <g transform="translate(0, 155)" fill="#334155" font-size="16">
+        <!-- Bullet 1 -->
+        <circle cx="6" cy="6" r="4" fill="#00A389"/>
+        <text x="24" y="11" font-weight="600" fill="#0F172A">Single-writer orchestration:</text>
+        <text x="24" y="34" fill="#64748B">Eliminates race conditions across parallel subagents.</text>
+
+        <!-- Bullet 2 -->
+        <circle cx="6" cy="68" r="4" fill="#00A389"/>
+        <text x="24" y="73" font-weight="600" fill="#0F172A">Ephemeral context caching:</text>
+        <text x="24" y="96" fill="#64748B">Prevents context pollution during long-horizon tasks.</text>
+
+        <!-- Bullet 3 -->
+        <circle cx="6" cy="130" r="4" fill="#00A389"/>
+        <text x="24" y="135" font-weight="600" fill="#0F172A">Deterministic replay log:</text>
+        <text x="24" y="158" fill="#64748B">Guarantees 100% auditability for mission-critical decisions.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 2: Process Mechanism / Flow (Width: 560, Height: 380) -->
+  <g transform="translate(680, 220)">
+    <rect width="560" height="380" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <path d="M 0 18 Q 0 0 18 0 L 542 0 Q 560 0 560 18 L 560 6 L 0 6 Z" fill="#00A389"/>
+
+    <g transform="translate(32, 36)">
+      <text x="0" y="0" fill="#00A389" font-size="13" font-weight="700" letter-spacing="1.2">02 / ARCHITECTURAL MECHANISM</text>
+      <text x="0" y="32" fill="#0F172A" font-size="24" font-weight="700">3-Stage Execution Pipeline</text>
+
+      <g transform="translate(430, -5)" color="#00A389">
+        <use href="#icon-layers" transform="scale(1.8)"/>
+      </g>
+
+      <!-- 3-Step Process Cards inside -->
+      <!-- Step 1 -->
+      <g transform="translate(0, 60)">
+        <rect width="496" height="68" rx="10" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1"/>
+        <rect x="14" y="14" width="38" height="38" rx="8" fill="#E6F7F4" stroke="#00A389" stroke-width="1"/>
+        <text x="33" y="39" fill="#00A389" font-size="18" font-weight="800" text-anchor="middle">1</text>
+        <text x="66" y="32" fill="#0F172A" font-size="16" font-weight="700">Intent &amp; Spec Parsing</text>
+        <text x="66" y="52" fill="#64748B" font-size="14">Extracts invariants, constraints, and success criteria.</text>
+      </g>
+
+      <!-- Step 2 -->
+      <g transform="translate(0, 140)">
+        <rect width="496" height="68" rx="10" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1"/>
+        <rect x="14" y="14" width="38" height="38" rx="8" fill="#E6F7F4" stroke="#00A389" stroke-width="1"/>
+        <text x="33" y="39" fill="#00A389" font-size="18" font-weight="800" text-anchor="middle">2</text>
+        <text x="66" y="32" fill="#0F172A" font-size="16" font-weight="700">Dynamic Task DAG Assembly</text>
+        <text x="66" y="52" fill="#64748B" font-size="14">Parallel subgraphs dispatched with capability routing.</text>
+      </g>
+
+      <!-- Step 3 -->
+      <g transform="translate(0, 220)">
+        <rect width="496" height="68" rx="10" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1"/>
+        <rect x="14" y="14" width="38" height="38" rx="8" fill="#E6F7F4" stroke="#00A389" stroke-width="1"/>
+        <text x="33" y="39" fill="#00A389" font-size="18" font-weight="800" text-anchor="middle">3</text>
+        <text x="66" y="32" fill="#0F172A" font-size="16" font-weight="700">Verification &amp; Convergence</text>
+        <text x="66" y="52" fill="#64748B" font-size="14">Multi-critic checks validate results against invariants.</text>
+      </g>
+
+      <!-- Connecting Flow Line -->
+      <line x1="33" y1="128" x2="33" y2="140" stroke="#00A389" stroke-width="2"/>
+      <line x1="33" y1="208" x2="33" y2="220" stroke="#00A389" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- CARD 3: Comparative Breakdown (Width: 560, Height: 380) -->
+  <g transform="translate(1280, 220)">
+    <rect width="560" height="380" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <path d="M 0 18 Q 0 0 18 0 L 542 0 Q 560 0 560 18 L 560 6 L 0 6 Z" fill="#00A389"/>
+
+    <g transform="translate(32, 36)">
+      <text x="0" y="0" fill="#00A389" font-size="13" font-weight="700" letter-spacing="1.2">03 / COMPARATIVE ANALYSIS</text>
+      <text x="0" y="32" fill="#0F172A" font-size="24" font-weight="700">Monolithic vs Graph Runtimes</text>
+
+      <g transform="translate(430, -5)" color="#00A389">
+        <use href="#icon-analytics" transform="scale(1.8)"/>
+      </g>
+
+      <!-- Split Columns -->
+      <!-- Monolithic Column -->
+      <g transform="translate(0, 60)">
+        <rect width="238" height="230" rx="10" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="18" y="28" fill="#64748B" font-size="14" font-weight="700">MONOLITHIC RUNTIME</text>
+        <g fill="#64748B" font-size="13" transform="translate(18, 55)">
+          <text x="0" y="0">✕ Cascading error propagation</text>
+          <text x="0" y="35">✕ O(N²) message serialization</text>
+          <text x="0" y="70">✕ Opaque memory bloat</text>
+          <text x="0" y="105">✕ Fragile un-isolated state</text>
+          <text x="0" y="140">✕ 34% retry overhead</text>
+        </g>
+      </g>
+
+      <!-- Graph Runtime Column -->
+      <g transform="translate(258, 60)">
+        <rect width="238" height="230" rx="10" fill="#E6F7F4" stroke="#00A389" stroke-width="1"/>
+        <text x="18" y="28" fill="#00A389" font-size="14" font-weight="700">MODULAR GRAPH (NEW)</text>
+        <g fill="#0F172A" font-size="13" font-weight="600" transform="translate(18, 55)">
+          <text x="0" y="0">✓ Isolated failure blast radius</text>
+          <text x="0" y="35">✓ Zero-copy memory channels</text>
+          <text x="0" y="70">✓ Linear scale to 128 workers</text>
+          <text x="0" y="105">✓ Self-healing sub-trees</text>
+          <text x="0" y="140">✓ 99.4% first-pass pass rate</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===================================================================
+       3. BOTTOM ROW: 2 EXPANDED SYNTHESIS CARDS
+       =================================================================== -->
+
+  <!-- CARD 4: Quantitative Metrics & Evidence (Width: 860, Height: 350) -->
+  <g transform="translate(80, 630)">
+    <rect width="860" height="350" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <path d="M 0 18 Q 0 0 18 0 L 842 0 Q 860 0 860 18 L 860 6 L 0 6 Z" fill="#00A389"/>
+
+    <g transform="translate(36, 36)">
+      <text x="0" y="0" fill="#00A389" font-size="13" font-weight="700" letter-spacing="1.2">04 / BENCHMARK EVIDENCE &amp; METRICS</text>
+      <text x="0" y="32" fill="#0F172A" font-size="24" font-weight="700">Latency &amp; Throughput Benchmark Summary</text>
+
+      <!-- 3 Metric Highlight Pillars -->
+      <g transform="translate(0, 65)">
+        <!-- Metric 1 -->
+        <rect width="246" height="110" rx="12" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="24" y="44" fill="#00A389" font-size="38" font-weight="800">4.2x</text>
+        <text x="24" y="72" fill="#0F172A" font-size="15" font-weight="700">Higher Concurrency</text>
+        <text x="24" y="92" fill="#64748B" font-size="13">Tested at 10,000 req/min</text>
+
+        <!-- Metric 2 -->
+        <g transform="translate(270, 0)">
+          <rect width="246" height="110" rx="12" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="24" y="44" fill="#00A389" font-size="38" font-weight="800">-62%</text>
+          <text x="24" y="72" fill="#0F172A" font-size="15" font-weight="700">Time-to-Verification</text>
+          <text x="24" y="92" fill="#64748B" font-size="13">Direct AST validation</text>
+        </g>
+
+        <!-- Metric 3 -->
+        <g transform="translate(540, 0)">
+          <rect width="246" height="110" rx="12" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="24" y="44" fill="#00A389" font-size="38" font-weight="800">99.8%</text>
+          <text x="24" y="72" fill="#0F172A" font-size="15" font-weight="700">Constraint Adherence</text>
+          <text x="24" y="92" fill="#64748B" font-size="13">Zero hallucinated actions</text>
+        </g>
+      </g>
+
+      <!-- Mini Bar Visualization (Pure SVG) -->
+      <g transform="translate(0, 205)">
+        <text x="0" y="16" fill="#334155" font-size="14" font-weight="600">Context Window Utilization Efficiency</text>
+        <rect x="0" y="28" width="786" height="22" rx="11" fill="#E2E8F0"/>
+        <!-- Segment 1 -->
+        <rect x="0" y="28" width="560" height="22" rx="11" fill="#00A389"/>
+        <text x="540" y="44" fill="#FFFFFF" font-size="12" font-weight="700" text-anchor="end">71% Signal</text>
+        <text x="770" y="44" fill="#64748B" font-size="12" font-weight="700" text-anchor="end">29% Overhead</text>
+        <text x="0" y="72" fill="#64748B" font-size="13">Evidence basis: 140 autonomous multi-agent trial evaluations recorded under isolated test harnesses.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 5: Strategic Synthesis & Actionable Next Steps (Width: 860, Height: 350) -->
+  <g transform="translate(980, 630)">
+    <rect width="860" height="350" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <path d="M 0 18 Q 0 0 18 0 L 842 0 Q 860 0 860 18 L 860 6 L 0 6 Z" fill="#00A389"/>
+
+    <g transform="translate(36, 36)">
+      <text x="0" y="0" fill="#00A389" font-size="13" font-weight="700" letter-spacing="1.2">05 / SYNTHESIS &amp; RECOMMENDATIONS</text>
+      <text x="0" y="32" fill="#0F172A" font-size="24" font-weight="700">Implementation Roadmap</text>
+
+      <g transform="translate(730, -5)" color="#00A389">
+        <use href="#icon-citation" transform="scale(1.8)"/>
+      </g>
+
+      <!-- Actionable Guidelines -->
+      <g transform="translate(0, 60)" font-size="15">
+        <!-- Item 1 -->
+        <g transform="translate(0, 0)">
+          <rect width="786" height="60" rx="10" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1"/>
+          <circle cx="28" cy="30" r="12" fill="#E6F7F4"/>
+          <text x="28" y="35" fill="#00A389" font-weight="800" font-size="13" text-anchor="middle">A</text>
+          <text x="56" y="26" fill="#0F172A" font-weight="700">Enforce Immutable Event Channels</text>
+          <text x="56" y="46" fill="#64748B">Never permit subagents to write directly to shared memory roots.</text>
+        </g>
+
+        <!-- Item 2 -->
+        <g transform="translate(0, 72)">
+          <rect width="786" height="60" rx="10" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1"/>
+          <circle cx="28" cy="30" r="12" fill="#E6F7F4"/>
+          <text x="28" y="35" fill="#00A389" font-weight="800" font-size="13" text-anchor="middle">B</text>
+          <text x="56" y="26" fill="#0F172A" font-weight="700">Prune Completed Sub-Graph Branches</text>
+          <text x="56" y="46" fill="#64748B">Drop intermediate reasoning trees after formal verification completes.</text>
+        </g>
+
+        <!-- Item 3 -->
+        <g transform="translate(0, 144)">
+          <rect width="786" height="60" rx="10" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1"/>
+          <circle cx="28" cy="30" r="12" fill="#E6F7F4"/>
+          <text x="28" y="35" fill="#00A389" font-weight="800" font-size="13" text-anchor="middle">C</text>
+          <text x="56" y="26" fill="#0F172A" font-weight="700">Deploy Monocolor Structural Diagrams</text>
+          <text x="56" y="46" fill="#64748B">Preserve high cognitive contrast across both presentation and print formats.</text>
+        </g>
+      </g>
+
+      <!-- Provenance note -->
+      <g transform="translate(0, 245)">
+        <text x="0" y="16" fill="#64748B" font-size="13" font-style="italic">
+          * NotebookLM synthesis compiled from whitepapers, benchmark logs, and verified runtime telemetry.
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===================================================================
+       4. FOOTER BIBLIOGRAPHY / CITATION STRIP
+       =================================================================== -->
+  <g transform="translate(80, 1010)">
+    <line x1="0" y1="0" x2="1760" y2="0" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="0" y="26" fill="#64748B" font-size="13" font-weight="500">
+      SOURCES: [1] Distributed Graph Protocol v3.1  ·  [2] Memory Barrier Profiling Q3-2026  ·  [3] Formal Critic Verification Engine  ·  [4] Autonomous Runtime Standards
+    </text>
+    <text x="1760" y="26" fill="#00A389" font-size="13" font-weight="700" text-anchor="end">GEMINI NOTEBOOK BRIEFING</text>
+  </g>
+</svg>

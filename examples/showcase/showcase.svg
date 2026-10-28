@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" font-family="Helvetica, Arial, sans-serif">
+  <!--
+    Showcase: infographic-builder skill, full infographic with locally generated art.
+    Every raster <image> below was produced on-device by FLUX.2-klein-4B
+    (see generate_assets.sh), cut out and recolored to the single accent #7fe3ff.
+    Structure, text, numbers and the chart are pure SVG.
+  -->
+  <defs>
+    <radialGradient id="bg" cx="75%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#11203d"/>
+      <stop offset="1" stop-color="#0a1224"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#7fe3ff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M2,2 L12,7 L2,12" fill="none" stroke="#7fe3ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <linearGradient id="barg" x1="0" x2="1">
+      <stop offset="0" stop-color="#7fe3ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7fe3ff" stop-opacity="0.9"/>
+    </linearGradient>
+    <style>
+      .card { fill:#0f1b33; fill-opacity:0.85; stroke:#7fe3ff; stroke-width:2; }
+      .h    { fill:#e8f6ff; font-size:26px; font-weight:700; letter-spacing:0.5px; }
+      .b    { fill:#9fb8cc; font-size:20px; }
+      .num  { fill:#0a1224; font-size:22px; font-weight:700; text-anchor:middle; }
+      .sec  { fill:#e8f6ff; font-size:26px; font-weight:700; letter-spacing:2px; }
+      .li   { fill:#e8f6ff; font-size:20px; }
+      .mut  { fill:#9fb8cc; font-size:16px; }
+      .flow { stroke:#7fe3ff; stroke-width:2.5; fill:none; marker-end:url(#arr); }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <!-- AI texture (FLUX), low opacity behind content -->
+  <image href="assets/circuit.png" x="1160" y="-140" width="820" height="820" opacity="0.07"/>
+  <image href="assets/circuit.png" x="-180" y="620" width="620" height="620" opacity="0.05" transform="rotate(180 130 930)"/>
+
+  <!-- Title -->
+  <text x="80" y="112" fill="#e8f6ff" font-size="52" font-weight="700" letter-spacing="1">FROM NOTES TO INFOGRAPHIC</text>
+  <text x="80" y="154" fill="#7fe3ff" font-size="22" letter-spacing="4">HOW THE INFOGRAPHIC-BUILDER SKILL WORKS, WITH ON-DEVICE AI ART</text>
+  <line x1="80" y1="180" x2="1840" y2="180" stroke="#7fe3ff" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- ===== Row 1 (left to right) ===== -->
+  <!-- 1 EXTRACT -->
+  <rect class="card" x="80" y="210" width="380" height="190" rx="14"/>
+  <image href="assets/notes.png" x="364" y="226" width="76" height="76"/>
+  <text class="h" x="110" y="270">EXTRACT</text>
+  <text class="b" x="110" y="318">Pull 3–8 steps, 2–4 hard</text>
+  <text class="b" x="110" y="346">numbers, one comparison</text>
+  <text class="b" x="110" y="374">and a single takeaway</text>
+  <circle cx="80" cy="210" r="22" fill="#7fe3ff"/><text class="num" x="80" y="218">1</text>
+
+  <!-- 2 LAYOUT -->
+  <rect class="card" x="510" y="210" width="380" height="190" rx="14"/>
+  <image href="assets/layout.png" x="794" y="226" width="76" height="76"/>
+  <text class="h" x="540" y="270">LAYOUT</text>
+  <text class="b" x="540" y="318">Pick a template: flow,</text>
+  <text class="b" x="540" y="346">timeline, hub, funnel,</text>
+  <text class="b" x="540" y="374">matrix or layered stack</text>
+  <circle cx="510" cy="210" r="22" fill="#7fe3ff"/><text class="num" x="510" y="218">2</text>
+
+  <!-- 3 AUTHOR SVG -->
+  <rect class="card" x="940" y="210" width="380" height="190" rx="14"/>
+  <image href="assets/pen.png" x="1224" y="226" width="76" height="76"/>
+  <text class="h" x="970" y="270">AUTHOR SVG</text>
+  <text class="b" x="970" y="318">Hand-write structure and</text>
+  <text class="b" x="970" y="346">all text on a 40 px grid,</text>
+  <text class="b" x="970" y="374">1920 × 1080 canvas</text>
+  <circle cx="940" cy="210" r="22" fill="#7fe3ff"/><text class="num" x="940" y="218">3</text>
+
+  <path class="flow" d="M462 305 H504"/>
+  <path class="flow" d="M892 305 H934"/>
+  <path class="flow" d="M1130 402 V444"/>
+
+  <!-- ===== Row 2 (right to left) ===== -->
+  <!-- 4 LOCAL AI ART -->
+  <rect class="card" x="940" y="450" width="380" height="190" rx="14"/>
+  <image href="assets/chip.png" x="1224" y="466" width="76" height="76"/>
+  <text class="h" x="970" y="510">LOCAL AI ART</text>
+  <text class="b" x="970" y="558">FLUX.2-klein draws icons</text>
+  <text class="b" x="970" y="586">on flat white; they are cut</text>
+  <text class="b" x="970" y="614">out and made monocolor</text>
+  <circle cx="940" cy="450" r="22" fill="#7fe3ff"/><text class="num" x="940" y="458">4</text>
+
+  <!-- 5 RENDER -->
+  <rect class="card" x="510" y="450" width="380" height="190" rx="14"/>
+  <image href="assets/aperture.png" x="794" y="466" width="76" height="76"/>
+  <text class="h" x="540" y="510">RENDER</text>
+  <text class="b" x="540" y="558">render.sh tries rsvg,</text>
+  <text class="b" x="540" y="586">headless Chrome, then</text>
+  <text class="b" x="540" y="614">inkscape or cairosvg</text>
+  <circle cx="510" cy="450" r="22" fill="#7fe3ff"/><text class="num" x="510" y="458">5</text>
+
+  <!-- 6 VERIFY -->
+  <rect class="card" x="80" y="450" width="380" height="190" rx="14"/>
+  <image href="assets/eye.png" x="364" y="466" width="76" height="76"/>
+  <text class="h" x="110" y="510">VERIFY</text>
+  <text class="b" x="110" y="558">Check the PNG for text</text>
+  <text class="b" x="110" y="586">overflow, overlap and</text>
+  <text class="b" x="110" y="614">clipping; fix, re-render</text>
+  <circle cx="80" cy="450" r="22" fill="#7fe3ff"/><text class="num" x="80" y="458">6</text>
+
+  <path class="flow" d="M938 545 H896"/>
+  <path class="flow" d="M508 545 H466"/>
+
+  <!-- ===== Hero panel ===== -->
+  <rect x="1380" y="210" width="460" height="430" rx="14" fill="#0f1b33" fill-opacity="0.6" stroke="#7fe3ff" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <text x="1410" y="250" fill="#7fe3ff" font-size="18" font-weight="700" letter-spacing="3">HERO ILLUSTRATION</text>
+  <image href="assets/hero.png" x="1450" y="268" width="320" height="320"/>
+  <text class="mut" x="1610" y="612" text-anchor="middle">Generated on-device · FLUX.2-klein 4B · no text</text>
+
+  <!-- ===== Division of labor ===== -->
+  <text class="sec" x="80" y="710">DIVISION OF LABOR</text>
+
+  <rect x="80" y="730" width="400" height="220" rx="14" fill="#0f1b33" fill-opacity="0.7" stroke="#9fb8cc" stroke-opacity="0.6" stroke-width="1.5"/>
+  <text x="110" y="774" fill="#e8f6ff" font-size="22" font-weight="700" letter-spacing="1">SVG OWNS</text>
+  <text class="li" x="110" y="818">▪  Layout and grid</text>
+  <text class="li" x="110" y="852">▪  Every label and number</text>
+  <text class="li" x="110" y="886">▪  Charts and arrows</text>
+  <text class="li" x="110" y="920">▪  Badges and reading order</text>
+
+  <rect x="520" y="730" width="400" height="220" rx="14" fill="#0f1b33" fill-opacity="0.7" stroke="#7fe3ff" stroke-width="2"/>
+  <text x="550" y="774" fill="#7fe3ff" font-size="22" font-weight="700" letter-spacing="1">LOCAL MODEL OWNS</text>
+  <text class="li" x="550" y="818">▪  Icons, 128–256 px</text>
+  <text class="li" x="550" y="852">▪  Hero art, up to 512 px</text>
+  <text class="li" x="550" y="886">▪  Low-opacity textures</text>
+  <text class="li" x="550" y="920" fill="#9fb8cc">✕  Never text or data</text>
+
+  <!-- ===== Asset budget chart ===== -->
+  <text class="sec" x="980" y="710">ASSET BUDGET</text>
+  <rect x="980" y="730" width="860" height="220" rx="14" fill="#0f1b33" fill-opacity="0.7" stroke="#7fe3ff" stroke-opacity="0.45" stroke-width="1.5"/>
+  <text class="mut" x="1010" y="768" letter-spacing="1">MAX ASSET EDGE (PX), LINEAR SCALE</text>
+
+  <!-- scale: 512 px -> 400 px bar -->
+  <text class="li" x="1010" y="812">Icon (min)</text>
+  <rect x="1170" y="792" width="100" height="28" rx="4" fill="url(#barg)"/>
+  <text class="li" x="1282" y="813" fill="#7fe3ff">128</text>
+
+  <text class="li" x="1010" y="862">Icon (max)</text>
+  <rect x="1170" y="842" width="200" height="28" rx="4" fill="url(#barg)"/>
+  <text class="li" x="1382" y="863" fill="#7fe3ff">256</text>
+
+  <text class="li" x="1010" y="912">Hero art</text>
+  <rect x="1170" y="892" width="400" height="28" rx="4" fill="url(#barg)"/>
+  <text class="li" x="1582" y="913" fill="#7fe3ff">512</text>
+
+  <line x1="1650" y1="760" x2="1650" y2="920" stroke="#7fe3ff" stroke-opacity="0.25"/>
+  <text x="1745" y="812" fill="#7fe3ff" font-size="40" font-weight="700" text-anchor="middle">&lt;50 KB</text>
+  <text class="mut" x="1745" y="836" text-anchor="middle">target per asset</text>
+  <text x="1745" y="896" fill="#7fe3ff" font-size="40" font-weight="700" text-anchor="middle">4 steps</text>
+  <text class="mut" x="1745" y="920" text-anchor="middle">per FLUX image</text>
+
+  <!-- ===== Footer ===== -->
+  <rect x="80" y="975" width="1760" height="60" rx="12" fill="#7fe3ff" fill-opacity="0.08" stroke="#7fe3ff" stroke-opacity="0.3"/>
+  <text x="110" y="1013" font-size="20" fill="#e8f6ff"><tspan fill="#7fe3ff" font-weight="700">PRINCIPLE</tspan>   SVG owns structure and text; local models own only decorative imagery. Every image here was generated on this Mac.</text>
+</svg>
